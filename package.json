@@ -1,0 +1,19 @@
+{
+  "name": "open-video-streaming-core",
+  "version": "0.1",
+  "main": "index.js",
+  "repository": "git@github.com:Simples-Digital/open-video-streaming-core.git",
+  "author": "David Alen <davidalen51@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon index.js"
+  }
+}
