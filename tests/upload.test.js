@@ -6,7 +6,7 @@ describe('[POST] /upload', () => {
     return request(app)
       .post('/upload')
       .set({ Accept: 'application/json', email: 'some@one.com', user_key: 'anyth1ng' })
-      .attach('text', './tests/testfile.txt')
+      .attach('text', './tests/upload.testfile.avi')
       .then((res) => {
         expect(res.statusCode).toBe(200);
       });
