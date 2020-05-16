@@ -3,3 +3,7 @@ node_modules/
 
 # editor
 .vscode/
+
+# cache files
+
+cache/
