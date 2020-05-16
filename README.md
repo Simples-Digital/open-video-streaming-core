@@ -1,3 +1,5 @@
+![alt](https://travis-ci.org/Simples-Digital/open-video-streaming-core.svg?branch=master)
+
 # Open Video Stream - Core
 
 1. Uma requisição "web" que recebe o arquivo (ou partes de um arquivo)
