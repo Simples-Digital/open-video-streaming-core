@@ -1,5 +1,14 @@
-const { post } = require('../src/upload/upload');
+const request = require('supertest');
+const { app } = require('../src/server');
 
-test('[post] req.files != undefined', () => {
-  expect(0).toBe(0);
+describe('[POST] /upload', () => {
+  test('should return message OK', () => {
+    return request(app)
+      .post('/upload')
+      .set({ Accept: 'application/json', email: 'some@one.com', user_key: 'anyth1ng' })
+      .attach('text', './tests/testfile.txt')
+      .then((res) => {
+        expect(res.statusCode).toBe(200);
+      });
+  });
 });
