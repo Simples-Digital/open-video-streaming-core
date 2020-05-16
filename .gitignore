@@ -1,0 +1,5 @@
+# binary files of C#
+bin/
+
+# editor
+.vscode/
