@@ -1,5 +1,5 @@
-const { get } = require('../src/upload/upload');
+const { post } = require('../src/upload/upload');
 
-test('expect to return 0', () => {
+test('[post] req.files != undefined', () => {
   expect(0).toBe(0);
 });
