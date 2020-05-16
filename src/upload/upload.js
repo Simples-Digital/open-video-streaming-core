@@ -9,7 +9,7 @@ const post = (req, res) => {
   // TODO: Get file from express and store it in cache for next microservice to work
 
   if (!req.headers.email || !req.headers.user_key) {
-    res.status(FORBIDDEN_UPLOAD_ERROR.status).json(FORBIDDEN_UPLOAD_
+    res.status(FORBIDDEN_UPLOAD_ERROR.status).json(FORBIDDEN_UPLOAD_ERROR);
   }
 
   if (req.files == undefined) {
