@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 12.2.0
+
+before_install:
+  - yarn add global npm
+
+cache:
+  yarn: false
+
+install:
+  - yarn install
+
+script:
+  - yarn test
